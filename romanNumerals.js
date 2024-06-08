@@ -10,10 +10,8 @@ function toRomanLazy(num) {
     M : 1000,
     };
   let romanNumeralPriorityOrder = ["M", "D", "C", "L", "X", "V", "I"]
-  // for (const [key, value] of Object.entries(romanNumeralToArabic)) {
-  //   console.log(`${key}: ${value}`);
-  // }
-  for (let i of romanNumeralPriorityOrder){
+  
+for (let i of romanNumeralPriorityOrder){
     
     let temp = Math.floor(num/romanNumeralToArabic[i])
     if(temp != 0){
@@ -24,12 +22,9 @@ function toRomanLazy(num) {
     }
   }
   return output
-  // for(let i = 0; i < romanNumeralPriorityOrder.length; i++){
-  // console.log(romanNumeralPriorityOrder[i])
-  // } 
-//   console.log(`dict value : ${romanNumeralToArabic["M"]}`)
-}
-function toRoman(num) {
+ }
+
+ function toRoman(num) {
   let output2 = ""
   let romanNumToA = {
     I: 1, 
